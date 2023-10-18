@@ -1,18 +1,30 @@
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
+# Go CDK
+/cdk.out
+
+# Go binary
+/bin
+/obj
+
+# Ignore any generated files
+/*.swp
+*.log
+
+# Dependency directories
+/vendor
+/node_modules
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Compiled output
+*.o
+*.a
 *.so
-*.dylib
+*.test
+*.prof
+*.out
 
-# Test binary, built with `go test -c`
-./cdk/*.test
-
-# Output of the go coverage tool, specifically when used with LiteIDE
-*.out/
-*.env
-
-# go.sum should be committed
-!go.sum
-!*.go
-
+# Editor-specific files
+.idea
+.vscode
